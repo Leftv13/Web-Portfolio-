@@ -5,13 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio Web</title>
     <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chau+Philomene+One:ital@0;1&display=swap" rel="stylesheet">
+
   </head>
 
   <body>
+    
     <div>
+      
       <h1>Meet your next Junior full stack web developer :) </h1>
 
-      <p style="font-size: 22px; text-align: left"></p>
+   
 
       <nav class="navbar">
         <ul>
@@ -25,19 +32,11 @@
         <div class="About">
           <section id="About">
             <h3
-              style="
-                color: aliceblue;
-                text-align: center;
-                font-size: 40px;
-                background-color: #183852;
-                padding: 10px;
-              "
             >
-              <u> Hi! Im Andres, a web developer :D </u>
+              <u> Hi! Im Andres,  Learn a bit about me :D </u>
             </h3>
-            <p style="font-size: 25px; text-align: left">
-
-                  My name is Andres Abreu, im currently 17 years old when making this page and i just started
+            <p id="resume">
+                  My full name is Andres Abreu, im currently 17 years old when making this page and i just started
                   to learn how to code. I consider myself to be a creative and friendly person, i always like to help
                   others if they need so, i like to solve problems, and i'm a responsible and respectful person. I'm always
                   looking foward to improve my skills and learn new things.
@@ -48,7 +47,7 @@
               <a
                 href="https://www.mediafire.com/file/mdnddunxvnwklc7/CV_Andres_Abreu.pdf/file"
                 target="_blank"
-                ><button>Download CV</button></a
+                ><button>Download my Resume</button></a
               >
             </p>
           </div>
@@ -56,41 +55,40 @@
         </div>
         <div class="Skills">
           <section id="Skills">
-            <h3
-              style="
-                color: aliceblue;
-                text-align: center;
-                font-size: 40px;
-                background-color: #183852;
-                padding: 10px;
-              "
+            <h3 id="skillsTtl"
             >
               <u>My Skills</u>
             </h3>
             <div class="List-container">
               <div class="categoria">
-                <h3><u>Programming Languages</u></h3>
-                <ul>
-                  <li>HTML: Basic</li>
-                  <li>CSS: Basic</li>
-                  <li>Python: Basic</li>
-                </ul>
+                <h3 style="font-size: 1.81rem;"><u>Programming Languages</u></h3>
+                <div id="skillsContainer">
+                  <ul>
+                    <li>HTML: Intermediate</li>
+                    <li>CSS: Intermediate</li>
+                    <li>JS: Intermediate</li>
+                  </ul>
+                </div>
               </div>
               <div class="categoria">
                 <h3><u>Languages</u></h3>
-                <ul>
-                  <li>Spanish: Native</li>
-                  <li>English: Advanced</li>
-                  <li>German: Basic</li>
-                </ul>
+                <div id="skillsContainer">
+                  <ul>
+                    <li>Spanish: Native</li>
+                    <li>English: Fluent</li>
+                    <li>German: Basic</li>
+                  </ul>
+                </div>
               </div>
               <div class="categoria">
                 <h3><u>Soft Skills</u></h3>
-                <ul>
-                  <li>Leadership</li>
-                  <li>Colaboration & Team Working</li>
-                  <li>Entusiasm</li>
-                </ul>
+                <div id="skillsContainer">
+                  <ul>
+                    <li>Leadership</li>
+                    <li>Teamwork</li>
+                    <li>Collaboration</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </section>
@@ -99,55 +97,98 @@
         <div class="Experience">
           <section id="Experience">
             <h3
-              style="
-                color: aliceblue;
-                text-align: center;
-                font-size: 40px;
-                background-color: #183852;
-                padding: 0px;
-                margin: 0px;
-              "
             >
               <u> My experience:</u>
             </h3>
             <div class="img-container">
               <div class="image-exp">
-                <a href="https://www.mediafire.com/file/gmonqdslcl2ah45/Suma_de_10_numeros_Andres_Abreu.psc_copy/file" target="_blank">
-                <img
-                  style="background-color: #16354e; padding: 20px; height: 80%; width: auto;"
-                  src="https://i.ibb.co/7NYkQfNg/Screen-Shot-2025-01-23-at-8-57-06-PM.png"
-                  alt="Suma de 10 numeros PSeint"
-                />    
-              </a> 
+
+                <div id="prodContainer">
+               
+                <ul id="prodList">
+                  <li class="prodItem">
+                     <div class="prodImg">
+                      <img src="https://i.ibb.co/GT3Cxy8/267025858-279931084178277-224921923092105228-n.jpg" alt="img1" class="pdImg">
+                     </div>
+                     <div class="prodInfo">
+                      <p id="exTitle">Canserbero Fanpage</p>
+                      <p id="exDesc">Informative Fanpage made with HTML, CSS & JS.</p>
+
+                      <a href="https://github.com/Leftv13/Canserbero-Fanpage" target="_blank" ><button class="prodBtn">CLICK HERE TO OPEN IT</button></a>
+                     </div> 
+                  </li>
+
+
+                  <li class="prodItem">
+                    <div class="prodImg">
+                     <img src="https://i.ibb.co/pvwjNPjf/Screen-Shot-2025-05-06-at-3-21-28-PM.png" alt="img1" class="pdImg">
+                    </div>
+                    <div class="prodInfo">
+                     <p id="exTitle">Pricer App</p>
+                     <p id="exDesc">Currency to crypto converter. Made with HTML, CSS, JS & A public API.</p>
+
+                     <a href="https://github.com/Leftv13/Pricer-app" target="_blank" ><button class="prodBtn">CLICK HERE TO OPEN IT</button></a>
+                    </div> 
+                 </li>
+
+                 <li class="prodItem">
+                  <div class="prodImg">
+                   <img src="https://i.ibb.co/jFNVHmz/Screen-Shot-2025-05-06-at-3-18-43-PM.png" alt="img1" class="pdImg">
+                  </div>
+                  <div class="prodInfo">
+                   <p id="exTitle">Shopping Cart</p>
+                   <p id="exDesc">Fake store with functional cart. Made with HTML, CSS & JS.</p>
+
+                   <a href="https://github.com/Leftv13/shopping-cart" target="_blank"><button class="prodBtn">CLICK HERE TO OPEN IT</button></a>
+                  </div> 
+               </li>
+
+               <li class="prodItem">
+                <div class="prodImg">
+                 <img src="https://i.ibb.co/xqLHP3tJ/Screen-Shot-2025-05-06-at-3-15-50-PM.png" alt="img1" class="pdImg">
+                </div>
+                <div class="prodInfo">
+                 <p id="exTitle">To do List</p>
+                 <p id="exDesc">A to do list made with HTML, CSS & JS.</p>
+
+                 <a href="https://github.com/Leftv13/To-do-List" target="_blank" ><button class="prodBtn">CLICK HERE TO OPEN IT</button></a>
+                </div> 
+             </li>
+
+       
+
+                </ul>
+                </div>
               </div>
 
-              <p style="background-color: #16354e; width: fit-content; padding: 10px; text-align: center;"  >Pseudocode in PSeint</p>
               
 
               <div class="image-exp">
-                <a href="https://leftv13.github.io/Canserbero-Fanpage/index.html" target="_blank">
-                <img
-                  style="background-color: #16354e; padding: 20px; height: 80%; width: auto;"
-                  src="https://i.ibb.co/8gBtBTJX/Screen-Shot-2025-01-29-at-8-42-17-AM.png"
-                  alt="Fanpage Canserbero"
-                />
-                
-              </a>
+               
               
             </div>
-            <p style="background-color: #16354e; width: fit-content; padding: 10px; " >Canserbero Fanpage</p>
+           
           </section>
         </div>
 
         <footer>
-          <h3 style="color: white" id="Contacto; background-color:#00223b" >
+          <h3>
             <u> Contact: </u>
           </h3>
 
           <div class="Link-Container"></div>
           <div class="Links">
-            <p>Mail: andresabreu007@gmail.com</p>
+          
             
+            <a
+              href="mailto:andresabreu007@gmail.com"
+              target="_blank"
+            >
+              <img
+                src="https://i.ibb.co/Jj61XN1V/img-icons8-com.png"
+                alt="Link to my Linkedin"
+            /></a>
+
             <a
               href="https://www.linkedin.com/in/andrés-abreu-058967324/"
               target="_blank"
@@ -164,8 +205,16 @@
             /></a>
           </div>
           
+          <div id="goUpCont">
+            <button id="toTop"><svg id="goUp" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+               <path stroke-linecap="round" stroke-linejoin="round" d="m15 11.25-3-3m0 0-3 3m3-3v7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+             </svg>
+             </button>
+        </div>
+
         </footer>
       </main>
     </div>
+<script src="main.js"></script>
   </body>
 </html>
